@@ -396,7 +396,7 @@ footer p {
   }
 
   .logo {
-    margin-left: 0;
+    margin-left:66px;
     font-size: 35px;
   }
   .hero h1 {
@@ -503,8 +503,22 @@ footer p {
   #res {
     display: none;
   }
+  nav{
+    display: none;
+  }
+}
+
+nav{
+  color: white;
+  font-family: pop;
+  font-size: 17px;
+}
+ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+ul li:hover{
+  color: #6c6a6a;
 }
 /* menu */
-@media only screen and (max-width: 600px) {
-  
-}

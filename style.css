@@ -288,7 +288,7 @@ ul {
 }
 .squre img{
   margin-top: 15px;
-  margin-left: 17px;
+  margin-left: 5px;
 }
 
 
@@ -367,4 +367,99 @@ footer p{
   font-family: sync;
   font-size: 20px;
   color: #434343;
+}
+
+
+
+
+/* mobile responsive */
+@media only screen and (max-width: 600px) {
+  .center {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+  }
+  
+  .center:before,
+  .center:after,
+  .center div {
+    background: orange;
+    content: "";
+    display: block;
+    height: 6px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+  
+  .center.active:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  
+  .center.active:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  
+  .center.active div {
+    transform: scale(0);
+  }
+  .responsive{
+    display: none;
+  }
+  .logo{
+    margin-left: -150px;
+    font-size: 35px;
+  }
+  .hero h1{
+    font-size: 112px;
+    
+  }
+  #sp2{
+    margin-top: -10%;
+  }
+  .do h1{
+    font-size: 25px;
+  }
+  .exp{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16%;
+    text-align: center;
+  }
+  .ser{
+    margin-left: 20%;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+  .service{
+    display: flex;
+    flex-direction: column;
+    margin-left: -15%;
+  }
+  .line-ser{
+    width: 320px;
+  }
+  .service-box{
+    gap: 10%;
+    text-align: center;
+    margin-left: -3%;
+    display: flex;
+    flex-direction: column;
+  }
+  .box1{
+   display: none;
+  }
+  .box2{
+    display: none;
+  }
+  .box3{
+    display: none;
+  }
+  .box4{
+    display: none;
+  }
 }

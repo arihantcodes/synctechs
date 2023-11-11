@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SYNCTECHS</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header class="header">
       <h1 class="logo">SYNCTECHS</h1>
+     <div class="responsive">
       <div class="nav">
         <ul>
           <li>HOME</li>
@@ -16,11 +18,15 @@
           <li>ABOUT US</li>
           <li>OUR WORK</li>
         </ul>
+      
       </div>
-      <div class="talk">
-        <button>LET'S TALK</button>
-        <img src="image/arrow.svg" alt="" />
+      
+     </div>
+      <!-- mobile menu -->
+      <div class="center" onclick="myFunction(this)">
+        <div></div>
       </div>
+      
     </header>
     <!-- hero section -->
     <div class="hero">
@@ -121,20 +127,20 @@
         <h1>OUR SERVICES</h1>
       </div>
       <div class="service-container">
-        <img src="image/Vector 2.svg" alt="" />
+        <img class="line-ser" src="image/Vector 2.svg" alt="" />
         <div class="service-box">
           <h1>UI/UX DESIGN</h1>
           <p>
             Our primary goal is to provide engaging user experiences.
             <br />
           </p>
-          <div class="squre">
-            <img src="image/Vector.svg" alt="" />
+          <div class="squre box1">
+            <img  src="image/Vector.svg" alt="" />
           </div>
         </div>
       </div>
       <div class="service-container">
-        <img src="image/Vector 2.svg" alt="" />
+        <img class="line-ser" src="image/Vector 2.svg" alt="" />
         <div class="service-box">
           <h1>WEB DEVELOPMENT</h1>
           <p>
@@ -142,13 +148,13 @@
             <br />
             Websites that enhance your online presence.
           </p>
-          <div class="squre">
+          <div class="squre box2">
             <img src="image/Vector.svg" alt="" />
           </div>
         </div>
       </div>
       <div class="service-container">
-        <img src="image/Vector 2.svg" alt="" />
+        <img class="line-ser" src="image/Vector 2.svg" alt="" />
         <div class="service-box">
           <h1>DIGITAL MARKETING</h1>
           <p>
@@ -157,13 +163,13 @@
             <br />
             online presence and accelerate business growth.
           </p>
-          <div class="squre">
+          <div class="squre box3">
             <img src="image/Vector.svg" alt="" />
           </div>
         </div>
       </div>
       <div class="service-container">
-        <img src="image/Vector 2.svg" alt="" />
+        <img class="line-ser" src="image/Vector 2.svg" alt="" />
         <div class="service-box">
           <h1>GRAPHIC DESIGN</h1>
           <p class="p">
@@ -171,7 +177,7 @@
             popularity.
             <br />
           </p>
-          <div class="squre">
+          <div class="squre box4">
             <img src="image/Vector.svg" alt="" />
           </div>
         </div>
@@ -251,12 +257,23 @@
           <h4>About</h4>
         </div>
         <div class="social">
-          <img src="image/linkedin.svg" alt="" />
-          <img src="image/instagram.svg" alt="" />
-          <img src="image/x-twitter.svg" alt="" />
+          <a href="https://www.linkedin.com/company/synctechs-ai">
+            <img src="image/linkedin.svg" alt=""
+          /></a>
+          <a
+            href="https://www.instagram.com/synctechs/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+          >
+            <img src="image/instagram.svg" alt=""
+          /></a>
+          <a href="https://x.com/TechsSync?s=20">
+            <img src="image/x-twitter.svg" alt=""
+          /></a>
         </div>
       </div>
-      <p>© 2023 Synctechs. All rights reserved. | Privacy Policy | Terms of Service</p>
+      <p>
+        © 2023 Synctechs. All rights reserved. | Privacy Policy | Terms of
+        Service
+      </p>
     </footer>
     <script>
       var animationPaused = false;
@@ -285,3 +302,4 @@
     </script>
   </body>
 </html>
+<!--  -->

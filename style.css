@@ -165,8 +165,8 @@ ul {
 .news-containerr {
   white-space: nowrap;
   animation: scrollTex 30s linear infinite;
-  background: #000;
-  color: #fff;
+  background: #c5c5c5;
+  color: black;
   width: 100%;
   display: flex;
   gap: 90px;
@@ -201,9 +201,9 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #c5c5c5;
 
-  color: white;
+  color: black;
 }
 .scrolling-text {
   display: inline-block;
@@ -296,5 +296,75 @@ ul {
 .p{
   margin-left: 8px;
 }
+.project h1{
+  color: #e4e4e4;
+  font-family: sync;
+  font-size: 40px;
+}
+.project{
+  margin-left:15% ;
+}
+.list-img{
+  height: 623;
+  width: 970;
+  display: flex;
+  margin-top: 2%;
+  gap: 5%;
 
+}
+.img-part img {
+  width: 343px;
+height: 289px;
+flex-shrink: 0;
+/* background: #D9D9D9; */
 
+}
+.scale h1{
+  font-family: sync;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #434343;
+  /* margin-top: 4%; */
+}
+footer{
+  background: #D9D9D9;
+  width: 100%;
+  margin-left:5px ;
+height: 362px;
+}
+.company{
+  margin-top: 30px;
+  font-family: sync;
+  display: flex;
+  color: #434343;
+  margin-left: 8%;
+}
+.company h1{
+  font-size:60px ;
+}
+.condition {
+  display: flex;
+  
+  margin-left: 25%;
+  margin-top: 1.5%;
+  font-size: 30px;
+  gap: 30px;
+}
+.social {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: 25%;
+}
+.social img{
+  height: 25px;
+  width: 45px;
+}
+footer p{
+  text-align: center;
+  font-family: sync;
+  font-size: 20px;
+  color: #434343;
+}

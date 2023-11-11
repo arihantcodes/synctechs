@@ -31,13 +31,6 @@ header {
   margin-top: 20px;
   margin-left: 20px;
 }
-ul {
-  list-style: none;
-  display: flex;
-  color: #fff;
-  font-family: pop;
-  gap: 27px;
-}
 
 .talk {
   background: #d9d9d9;
@@ -267,16 +260,15 @@ ul {
 .service-box {
   display: flex;
   justify-content: space-between;
-
 }
-.service-box h1{
+.service-box h1 {
   font-family: sync;
 }
-.service-box p{
+.service-box p {
   font-family: pop;
   /* text-align: center; */
   display: flex;
-  
+
   align-items: center;
 }
 .squre {
@@ -286,40 +278,36 @@ ul {
   height: 55px;
   flex-shrink: 0;
 }
-.squre img{
+.squre img {
   margin-top: 15px;
   margin-left: 17px;
 }
 
-
-
-.p{
+.p {
   margin-left: 8px;
 }
-.project h1{
+.project h1 {
   color: #e4e4e4;
   font-family: sync;
   font-size: 40px;
 }
-.project{
-  margin-left:15% ;
+.project {
+  margin-left: 15%;
 }
-.list-img{
+.list-img {
   height: 623;
   width: 970;
   display: flex;
   margin-top: 2%;
   gap: 5%;
-
 }
 .img-part img {
   width: 343px;
-height: 289px;
-flex-shrink: 0;
-/* background: #D9D9D9; */
-
+  height: 289px;
+  flex-shrink: 0;
+  /* background: #D9D9D9; */
 }
-.scale h1{
+.scale h1 {
   font-family: sync;
   display: flex;
   justify-content: center;
@@ -328,25 +316,25 @@ flex-shrink: 0;
   color: #434343;
   /* margin-top: 4%; */
 }
-footer{
-  background: #D9D9D9;
+footer {
+  background: #d9d9d9;
   width: 100%;
-  margin-left:5px ;
-height: 362px;
+  margin-left: 5px;
+  height: 362px;
 }
-.company{
+.company {
   margin-top: 30px;
   font-family: sync;
   display: flex;
   color: #434343;
   margin-left: 8%;
 }
-.company h1{
-  font-size:60px ;
+.company h1 {
+  font-size: 60px;
 }
 .condition {
   display: flex;
-  
+
   margin-left: 25%;
   margin-top: 1.5%;
   font-size: 30px;
@@ -358,19 +346,16 @@ height: 362px;
   align-items: center;
   margin-left: 25%;
 }
-.social img{
+.social img {
   height: 25px;
   width: 45px;
 }
-footer p{
+footer p {
   text-align: center;
   font-family: sync;
   font-size: 20px;
   color: #434343;
 }
-
-
-
 
 /* mobile responsive */
 @media only screen and (max-width: 600px) {
@@ -379,140 +364,147 @@ footer p{
     right: 0;
     transform: translate(-50%, -50%);
     position: absolute;
-    width: 50px;
+    width: 30px;
   }
-  
+  .v-class {
+    opacity: 0;
+    /* flex-direction: column; */
+  }
+
   .center:before,
   .center:after,
   .center div {
-    background: orange;
+    background: #c5c5c5;
     content: "";
     display: block;
-    height: 6px;
+    height: 4px;
     border-radius: 3px;
     margin: 7px 0;
     transition: 0.5s;
   }
-  
+
   .center.active:before {
     transform: translateY(12px) rotate(135deg);
   }
-  
+
   .center.active:after {
     transform: translateY(-12px) rotate(-135deg);
   }
-  
+
   .center.active div {
     transform: scale(0);
   }
-  .responsive{
-    display: none;
-  }
-  .logo{
-    margin-left: -150px;
+
+  .logo {
+    margin-left: 0;
     font-size: 35px;
   }
-  .hero h1{
-    font-size: 112px;
-    
+  .hero h1 {
+    font-size: 98px;
   }
-  #sp2{
+  #sp2 {
     margin-top: -10%;
   }
-  .do h1{
+  .do h1 {
     font-size: 25px;
   }
-  .exp{
+  .exp {
     display: flex;
     flex-direction: column;
     margin-top: 16%;
     text-align: center;
   }
-  .ser{
+  .ser {
     margin-left: 20%;
   }
-  .about{
+  .about {
     display: flex;
     flex-direction: column;
   }
-  .service{
+  .service {
     display: flex;
     flex-direction: column;
     margin-left: -15%;
   }
-  .line-ser{
+  .line-ser {
     width: 320px;
   }
-  .service-box{
+  .service-box {
     gap: 10%;
     text-align: center;
     margin-left: -3%;
     display: flex;
     flex-direction: column;
   }
-  .box1{
-   display: none;
-  }
-  .box2{
+  .box1 {
     display: none;
   }
-  .box3{
+  .box2 {
     display: none;
   }
-  .box4{
+  .box3 {
     display: none;
   }
-  .left h1{
+  .box4 {
+    display: none;
+  }
+  .left h1 {
     text-align: center;
   }
   .h1 h1 {
-  margin-left: 25%;
+    margin-left: 25%;
   }
-  .project h1{
+  .project h1 {
     text-align: center;
   }
-  .list-img{
+  .list-img {
     display: flex;
     flex-direction: column;
     margin-left: -15%;
     width: 320px;
   }
-  footer{
+  footer {
     width: 100%;
-
   }
-  .scale h1{
+  .scale h1 {
     font-size: 40px;
   }
-  .company{
+  .company {
     display: flex;
     flex-direction: column;
   }
-  .company h1{
+  .company h1 {
     font-size: 30px;
     text-align: center;
     margin-top: -10%;
   }
-  .condition{
+  .condition {
     font-size: 20px;
     margin-left: 15%;
     margin-top: -12%;
   }
-  .social a{
+  .social a {
     margin-left: 22%;
   }
-  .x{
+  .x {
     margin-right: 20%;
   }
-  footer p{
+  footer p {
     margin-top: 25%;
     font-size: 18px;
   }
-  .right img{
+  .right img {
     width: 300px;
     margin-left: 5%;
   }
-  .arrow{
+  .arrow {
     margin-left: 25%;
   }
+  #res {
+    display: none;
+  }
+}
+/* menu */
+@media only screen and (max-width: 600px) {
+  
 }

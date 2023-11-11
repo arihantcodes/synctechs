@@ -288,7 +288,7 @@ ul {
 }
 .squre img{
   margin-top: 15px;
-  margin-left: 5px;
+  margin-left: 17px;
 }
 
 
@@ -461,5 +461,58 @@ footer p{
   }
   .box4{
     display: none;
+  }
+  .left h1{
+    text-align: center;
+  }
+  .h1 h1 {
+  margin-left: 25%;
+  }
+  .project h1{
+    text-align: center;
+  }
+  .list-img{
+    display: flex;
+    flex-direction: column;
+    margin-left: -15%;
+    width: 320px;
+  }
+  footer{
+    width: 100%;
+
+  }
+  .scale h1{
+    font-size: 40px;
+  }
+  .company{
+    display: flex;
+    flex-direction: column;
+  }
+  .company h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -10%;
+  }
+  .condition{
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: -12%;
+  }
+  .social a{
+    margin-left: 22%;
+  }
+  .x{
+    margin-right: 20%;
+  }
+  footer p{
+    margin-top: 25%;
+    font-size: 18px;
+  }
+  .right img{
+    width: 300px;
+    margin-left: 5%;
+  }
+  .arrow{
+    margin-left: 25%;
   }
 }

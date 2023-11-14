@@ -10,9 +10,13 @@
   font-family: stant;
   src: url(font/Dx-Slight-SemBd-Slim-Slant.otf);
 }
-
+li a{
+  color: white;
+  text-decoration: none;
+}
 body {
   background-color: #232323;
+  scroll-behavior: smooth;
 }
 header {
   display: flex;

@@ -8,15 +8,15 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <header>
+    <header >
       <div><h1 class="logo">SYNCTECHS</h1></div>
       <!-- menu -->
-      <nav>
-        <ul class="">
-          <li>HOME</li>
-          <li>ABOUT US</li>
-          <li>OUR SERVICES</li>
-          <li>PROJECTS</li>
+      <nav id="home">
+        <ul >
+          <li><a href="#home">HOME</a> </li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#ourser">OUR SERVICES</a></li>
+          <li><a href="#project">PROJECTS</a></li>
 
         </ul>
       </nav>
@@ -97,7 +97,7 @@
       </div>
     </div>
     <!-- about us -->
-    <div class="about">
+    <div id="about" class="about">
       <div class="left">
         <h1>ABOUT US</h1>
         <h1>
@@ -121,7 +121,7 @@
       </div>
     </div>
     <!-- our service -->
-    <div class="service">
+    <div id="ourser" class="service">
       <div class="h1">
         <h1>OUR SERVICES</h1>
       </div>
@@ -201,7 +201,7 @@
     </div>
 
     <!-- projects -->
-    <div class="project">
+    <div id="project" class="project">
       <h1>PROJECTS</h1>
       <div class="list-img">
         <div class="img-part">
@@ -257,31 +257,7 @@
         Service
       </p>
     </footer>
-    <script>
-      var animationPaused = false;
 
-      function pauseAnimation(element) {
-        animationPaused = true;
-        element.querySelector(".news-container").style.animationPlayState =
-          "paused";
-      }
-
-      function resumeAnimation(element) {
-        animationPaused = false;
-        element.querySelector(".news-container").style.animationPlayState =
-          "running";
-      }
-
-      document
-        .querySelector(".news-container")
-        .addEventListener("animationiteration", function () {
-          if (animationPaused) {
-            this.style.animation = "none";
-            void this.offsetWidth; /* Trigger reflow */
-            this.style.animation = null;
-          }
-        });
-    </script>
   </body>
 </html>
 <!--  -->

@@ -18,23 +18,7 @@ body {
   background-color: #232323;
   scroll-behavior: smooth;
 }
-header {
-  display: flex;
-  justify-content: space-around;
-  position: sticky;
-  align-items: center;
-  backdrop-filter: blur(10px); /* Set the blur amount as needed */
-  top: 0;
-  z-index: 1000;
-  transition: backdrop-filter 0.3s ease-in-out;
-}
-.logo {
-  font-family: sync;
-  font-size: 50px;
-  color: #fff;
-  margin-top: 20px;
-  margin-left: 20px;
-}
+
 
 .talk {
   background: #d9d9d9;
@@ -49,11 +33,13 @@ header {
   font-family: pop;
   font-size: 22px;
 }
+
 .hero h1 {
   font-family: sync;
-  font-size: 190px;
+  
+  /* font-size: 190px; */
   text-align: center;
-  margin-top: -40px;
+  
 }
 #sp1 {
   background: linear-gradient(90deg, #555, #e4e4e4);
@@ -76,9 +62,9 @@ header {
 .rec {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  height: 355px;
-  width: 323px;
+  margin-left: 0;
+  height: 332px;
+  width: 321px;
 }
 .rec4 {
   margin-top: -20.9rem;
@@ -95,7 +81,7 @@ header {
   transform: rotate(-0.485deg);
   flex-shrink: 0;
 }
-.do h1 {
+.doe h1 {
   color: #fff;
   font-family: sync;
   font-size: 40px;
@@ -103,7 +89,7 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-top: -7%;
+  margin-top: 0;
   margin-bottom: 4%;
 }
 .exp {
@@ -214,12 +200,13 @@ header {
   font-family: sync;
   color: #e1dbdb;
 }
-.left span {
+#sp1,#sp2,#sp3 {
   background: linear-gradient(271deg, #6e6e6e 0.3%, #f2f2f2 103.66%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 64px;
+  font-size: 190px;
+  padding: 12px;
 }
 .left h1 {
   font-size: 40px;
@@ -306,9 +293,9 @@ header {
   gap: 5%;
 }
 .img-part img {
-  width: 343px;
+  width: 300px;
   height: 289px;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   /* background: #D9D9D9; */
 }
 .scale h1 {
@@ -399,23 +386,22 @@ footer p {
     transform: scale(0);
   }
 
-  .logo {
-    margin-left:66px;
-    font-size: 35px;
-  }
-  .hero h1 {
-    font-size: 98px;
+  
+  #sp1,#sp2,#sp3 {
+    font-size: 40px;
+    padding: 5px;
   }
   #sp2 {
     margin-top: -10%;
   }
-  .do h1 {
+  .doe h1 {
     font-size: 25px;
   }
   .exp {
     display: flex;
     flex-direction: column;
-    margin-top: 16%;
+    margin-top: 22%;
+   
     text-align: center;
   }
   .ser {
@@ -507,22 +493,129 @@ footer p {
   #res {
     display: none;
   }
-  nav{
-    display: none;
+
+}
+
+/* mobiless */
+
+
+.logo{
+  font-family:sync ;
+  font-size: 45px;
+}
+nav {
+  
+  height: 100px;
+  display: flex;
+  
+  align-items: center;
+}
+.nav-bar {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  list-style: none;
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  padding-left: 20px;
+  font-family: pop;
+}
+.menu li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background-color: white;
+  height: 1px;
+  transition: 0.15s ease-in-out;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.menu li a:hover:after {
+  width: 100%;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  display: none;
+}
+.open-menu {
+  /* top: 50%; */
+  top: 20px;
+  right: 10px;
+  transform: translate(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+#check {
+  display: none;
+}
+@media (max-width: 610px) {
+  .logo{
+    font-size: 30px;
+    margin-top: -53px;
+    
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    
+    background-color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,.close-menu{
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
   }
 }
 
-nav{
-  color: white;
-  font-family: pop;
-  font-size: 17px;
+@media (min-width: 1000px) {
+  header{
+    position: sticky;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Set the blur amount as needed */
+    top: 0;
+    z-index: 1000;
+    transition: backdrop-filter 0.3s ease-in-out;
+    
+  }
+  .nav-bar{
+    justify-content: space-evenly;
+  }
 }
-ul{
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-ul li:hover{
-  color: #6c6a6a;
-}
-/* menu */

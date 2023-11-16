@@ -18,7 +18,9 @@ body {
   background-color: #232323;
   scroll-behavior: smooth;
 }
-
+.condition a{
+  color: #434343;
+}
 
 .talk {
   background: #d9d9d9;

@@ -12,12 +12,4 @@ var animationPaused = false;
           "running";
       }
 
-      document
-        .querySelector(".news-container")
-        .addEventListener("animationiteration", function () {
-          if (animationPaused) {
-            this.style.animation = "none";
-            void this.offsetWidth; /* Trigger reflow */
-            this.style.animation = null;
-          }
-        });
+ 
